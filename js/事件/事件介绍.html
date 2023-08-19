@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <span>事件</span>
+        <span>:</span>
+        <span>编程系统内发生的动作或者发生的事情</span>
+    </div>
+    <div>
+        <span>事件监听</span>
+        <span>:</span>
+        <span>就是让程序检测是否有事件产生，一旦有事件触发，就立即调用一个函数做出响应，也称为注册事件</span>
+        
+        <br>
+       元素.addEventListener('事件', 要执行的函数, 是否捕获)
+       事件源:获取的dom函数
+       事件：用来什么动作触发
+       事件调用的函数：要做什么事情
+
+       <button >点击我</button>
+       <script>
+           let btn=document.querySelector('button')
+           btn.addEventListener('click',function(){
+               alert('hello')
+           })
+          
+       </script>
+        
+    </div>
+</body>
+</html>

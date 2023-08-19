@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // this: 函数内部特殊的变量this，代表着当前函数运行时所处的环境
+        // 谁调用this this就指向谁
+        function soma(){
+            console.log(this)
+        }
+        soma.call(window,1,2,3,4)
+
+    </script>
+</body>
+</html>
